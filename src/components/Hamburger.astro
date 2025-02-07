@@ -1,5 +1,27 @@
-<div class="hamburger">
+<button class="hamburger">
   <span class="line"></span>
   <span class="line"></span>
   <span class="line"></span>
-</div>
+</button>
+
+<style>
+button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 2rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  @media (width >= 64rem) {
+    display: none;
+  }
+ }
+
+.line {
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+</style>

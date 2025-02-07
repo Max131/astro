@@ -1,0 +1,13 @@
+:root {
+  @custom-media --desktop (width >= 64rem);
+
+  --color-text: #3c3c3c;
+  --color-primary: #639;
+  --color-background: #fcfcfc;
+  --font-family: system-ui;
+
+  &.dark {
+    --color-text: #ececec;
+    --color-background: #3c3c3c;
+  }
+}
