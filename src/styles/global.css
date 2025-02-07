@@ -13,6 +13,15 @@ html {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+
+  &.dark {
+    background-color: #0d0950;
+    color: #fcfcfc;
+
+    .nav-links a {
+      color: #fcfcfc;
+    }
+  }
 }
 
 body {
