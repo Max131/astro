@@ -15,24 +15,9 @@ const skills = ["HTML", "CSS", "Javascript", "Svelte", "Astro"];
 const happy = true;
 const finished = true;
 const goal = 3;
-
-const skillColor = "blueviolet";
 ---
 
 <Layout {pageTitle}>
-	<style define:vars={{skillColor, fontWeight: "bold", textCase: "uppercase"}}>
-	h1 {
-		color: purple;
-		font-size:4rem;
-	}
-
-	.skill {
-		color: var(--skillColor);
-		font-weight: var(--fontWeight);
-		text-transform: var(--textCase);
-	}
-	</style>
-
   <h2>... ¡y mi nuevo sitio Astro!</h2>
 
   <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
