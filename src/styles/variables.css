@@ -1,10 +1,12 @@
 :root {
+  @custom-media --mobile (width <= 32rem);
   @custom-media --desktop (width >= 64rem);
 
   --color-text: #3c3c3c;
-  --color-primary: #639;
+  --color-primary: #369;
   --color-background: #fcfcfc;
-  --font-family: system-ui;
+  --color-light: #fcfcfc;
+  --font-family: poppins, inter, system-ui;
 
   &.dark {
     --color-text: #ececec;
