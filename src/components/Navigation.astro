@@ -1,6 +1,14 @@
+---
+const routes = {
+  "Inicio": "/",
+  "Acerca de mí": "/about",
+  "Blog": "/blog",
+  "Etiquetas": "/tags"
+}
+
+const mappedRoutes = Object.entries(routes);
+---
+
 <div class="navbar-links">
-  <a href="/">Inicio</a>
-  <a href="/about/">Sobre mi</a>
-  <a href="/blog/">Blog</a>
-  <a href="/tags/">Etiquetas</a>
+  {mappedRoutes.map(([key, value]) => <a href={value} class:list={{"is-active": Astro.url.pathname.endsWith(value)}}>{key}</a>)}
 </div>

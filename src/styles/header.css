@@ -22,14 +22,15 @@
     right: 0;
     flex-direction: column;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     background-color: var(--color-background);
-    box-shadow: 0 0 20px -6px var(--color-text);
+    box-shadow: 0 0 20px -6px
+      color-mix(in srgb, var(--color-text), transparent 50%);
     opacity: 0;
     pointer-events: none;
     transition:
       opacity 200ms,
-      top 150ms;
+      top 250ms;
 
     &.expanded {
       top: 100%;
@@ -43,7 +44,7 @@
     text-decoration-thickness: 0.15em;
     text-underline-offset: 0.35em;
 
-    &:is(:hover, :focus-visible) {
+    &:is(:hover, :focus-visible, .is-active) {
       color: var(--color-primary);
     }
 
@@ -51,6 +52,10 @@
       border-radius: 0.5rem;
       outline: 2px dashed;
       outline-offset: 0.15em;
+    }
+
+    @media (--mobile) {
+      text-decoration: none;
     }
   }
 }
