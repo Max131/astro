@@ -8,6 +8,7 @@ export default defineConfig({
   site: "https://astroio.netlify.app",
   compressHTML: false,
   scopedStyleStrategy: "class",
+  trailingSlash: "never",
   integrations: [preact()],
   build: {
     inlineStylesheets: "never"
