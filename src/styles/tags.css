@@ -1,3 +1,9 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
 .tag {
   display: inline-block;
   padding: 0.25rem 0.75rem;
