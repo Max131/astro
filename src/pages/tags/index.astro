@@ -8,6 +8,6 @@ const pageTitle = "Índice de etiquetas"
 
 <Layout {pageTitle}>
   <div class="tags">
-    {tags.map(tag => <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>)}
+    {tags.map(tag => <a class="tag" href={`/tags/${tag}`}>{tag}</a>)}
   </div>
 </Layout>
